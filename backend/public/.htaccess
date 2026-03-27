@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# IMPORTANT: adapte si chemen an diferan
+RewriteBase /Projet/MV-STREAMReact/backend/public/
+
+# Pase Authorization header bay PHP
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Router tout /api/... sou index.php (si se pa yon file reyèl)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+
+
+# MIME types for streaming
+AddType video/mp4 .mp4
+AddType application/vnd.apple.mpegurl .m3u8
+AddType application/x-mpegURL .m3u8
+AddType video/mp2t .ts
+Header set Accept-Ranges bytes

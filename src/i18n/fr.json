@@ -1,0 +1,54 @@
+{
+  "translation": {
+    "common": {
+      "back": "Retour",
+      "loading": "Chargement...",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "search": "Rechercher",
+      "filter": "Filtrer"
+    },
+    "auth": {
+      "signIn": "Se connecter",
+      "signOut": "Se déconnecter",
+      "register": "S'inscrire",
+      "email": "Email",
+      "password": "Mot de passe",
+      "forgotPassword": "Mot de passe oublié ?",
+      "rememberMe": "Se souvenir de moi"
+    },
+    "admin": {
+      "dashboard": "Tableau de bord administrateur",
+      "content": {
+        "title": "Gestion du contenu",
+        "description": "Gérer les vidéos, les flux en direct et autres contenus",
+        "addContent": "Ajouter du contenu",
+        "editContent": "Modifier le contenu",
+        "deleteContent": "Supprimer le contenu"
+      },
+      "users": {
+        "title": "Gestion des utilisateurs",
+        "description": "Gérer les comptes utilisateurs et les permissions",
+        "addUser": "Ajouter un utilisateur",
+        "editUser": "Modifier l'utilisateur",
+        "deleteUser": "Supprimer l'utilisateur"
+      },
+      "analytics": {
+        "title": "Analytique",
+        "description": "Voir les statistiques et métriques de la plateforme",
+        "views": "Vues",
+        "users": "Utilisateurs",
+        "revenue": "Revenus"
+      }
+    },
+    "navigation": {
+      "home": "Accueil",
+      "browse": "Parcourir",
+      "liveTv": "TV en direct",
+      "profile": "Profil",
+      "subscription": "Abonnement"
+    }
+  }
+}
