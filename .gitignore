@@ -26,3 +26,4 @@ dist-ssr
 
 # Backend secrets (hardcoded credentials - do not commit)
 backend/src/config.php
+node_modules
