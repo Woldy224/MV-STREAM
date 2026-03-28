@@ -1,11 +1,16 @@
-export default {
-  server: {
-    proxy: {
-      "/api": {
-        target: "http://localhost/Projet/MV-STREAMReact/backend/public",
-        changeOrigin: true,
-        secure: false,
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-vendor': ['bootstrap', 'lucide-react'],
+        },
       },
     },
   },
-};
+})
