@@ -1,4 +1,4 @@
-export const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost/Projet/MV-STREAMReact/backend/public';
+export const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://backend-production-c4e3.up.railway.app';
 // Build full URL for assets returned as relative paths (e.g. "/uploads/abc.jpg")
 export function assetUrl(path?: string | null): string {
   if (!path) return '';

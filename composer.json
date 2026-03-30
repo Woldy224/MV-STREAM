@@ -1,0 +1,7 @@
+{
+  "name": "mv-stream/backend",
+  "description": "PHP Backend for MV-STREAM",
+  "require": {
+    "php": "^8.0"
+  }
+}
